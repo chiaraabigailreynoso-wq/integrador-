@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Dolce Neve</title>
+
+  <link rel="icon" type="image/png" href="logox.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="sticky-top bg-white shadow-sm">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid px-0">
+
+        <a class="navbar-brand me-auto" href="index.html">
+          <img src="logox.png" alt="Dolce Neve Logo">
+        </a>
+
+        <button class="navbar-toggler btn-menu-icon" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Abrir menú">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="galeria.html">GALERÍA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <a href="https://wa.me/5492646230093"
+             class="btn-whatsapp" title="WhatsApp" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 bg-pink-section">
+    <div class="container">
+
+      <div class="text-center mb-5">
+        <span class="section-subtitle-tag">UN POCO DE DULZURA</span>
+        <h1 class="section-title display-5">Galería Dolce Neve</h1>
+        <p class="section-desc">
+          Descubrí algunos de nuestros sabores y productos artesanales.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="fruti.png" class="card-img-top" alt="Helado Fruti Cream">
+
+            <div class="card-body text-center">
+              <h2 class="h5">Fruti Cream</h2>
+              <p class="section-desc">
+                Frutillas y crema artesanal.
+              </p>
+
+              <button class="btn btn-dn-pink"
+                data-bs-toggle="modal"
+                data-bs-target="#modalFruti">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="choco.png" class="card-img-top" alt="Helado Choco Dolce">
+
+            <div class="card-body text-center">
+              <h2 class="h5">Choco Dolce</h2>
+              <p class="section-desc">
+                Una opción intensa para amantes del chocolate.
+              </p>
+
+              <button class="btn btn-dn-pink"
+                data-bs-toggle="modal"
+                data-bs-target="#modalChoco">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <img src="nuez.png" class="card-img-top" alt="Helado Nuez Dolce">
+
+            <div class="card-body text-center">
+              <h2 class="h5">Nuez Dolce</h2>
+              <p class="section-desc">
+                Crema tostada con nueces.
+              </p>
+
+              <button class="btn btn-dn-pink"
+                data-bs-toggle="modal"
+                data-bs-target="#modalNuez">
+                Ver imagen
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="contacto.html" class="btn btn-dn-pink">
+          Hacé tu pedido
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- MODAL FRUTI CREAM -->
+<div class="modal fade" id="modalFruti" tabindex="-1"
+  aria-labelledby="modalFrutiLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="modalFrutiLabel">
+          Fruti Cream
+        </h2>
+
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Cerrar">
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <img src="fruti.png" class="img-fluid rounded"
+          alt="Helado Fruti Cream">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CHOCO DOLCE -->
+<div class="modal fade" id="modalChoco" tabindex="-1"
+  aria-labelledby="modalChocoLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="modalChocoLabel">
+          Choco Dolce
+        </h2>
+
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Cerrar">
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <img src="choco.png" class="img-fluid rounded"
+          alt="Helado Choco Dolce">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL NUEZ DOLCE -->
+<div class="modal fade" id="modalNuez" tabindex="-1"
+  aria-labelledby="modalNuezLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="modalNuezLabel">
+          Nuez Dolce
+        </h2>
+
+        <button type="button" class="btn-close"
+          data-bs-dismiss="modal" aria-label="Cerrar">
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <img src="nuez.png" class="img-fluid rounded"
+          alt="Helado Nuez Dolce">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer-custom">
+  <img src="dolcex.png" alt="Dolce Watermark" class="footer-watermark">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+
+        <h4 class="footer-title">Dolce Neve</h4>
+
+        <p class="footer-text">
+          Helados hechos de forma artesanal, con las mejores
+          materias primas del país. Tradición familiar y
+          pasión en cada cucurucho.
+        </p>
+
+        <div class="footer-info-item">
+          <i class="bi bi-telephone"></i> +54 264 123 4567
+        </div>
+
+        <div class="footer-info-item">
+          <i class="bi bi-envelope"></i> dolceneve@helados.com
+        </div>
+
+        <div class="footer-info-item">
+          <i class="bi bi-geo-alt"></i>
+          Av. Ignacio de la Rosa 1235 Oeste, San Juan, Argentina
+        </div>
+
+        <div class="mt-4">
+          <a href="#" class="footer-social-icon">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="footer-social-icon">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
